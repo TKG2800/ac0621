@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: tutorial
+    build:
+      dockerfile: Docker/tutorial
+      context: .
+    volumes:
+        - ./tutorial:/usr/src/app
+        - /usr/src/app/node_modules
+    tty: true

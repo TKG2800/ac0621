@@ -1,0 +1,11 @@
+FROM node:latest
+WORKDIR /usr/src/app
+RUN touch a.txt
+RUN npm init -y
+RUN npm cache clean --force
+RUN rm -rf node_modules
+RUN rm -rf /root/.npm
+RUN rm -f package-lock.json # package-lock.json を削除
+RUN npm -g install typescript
+RUN echo export PATH=\$PATH:`pwd`/node_modules/.bin >> ~/.bashrc
+RUN . ~/.bashrc

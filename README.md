@@ -6,10 +6,10 @@
   - リスト(list)
   - マーカー(marker)
   - 文字入力(write)
-(CRUD)
-- 保存(save)
-- 作成(make)
-- 削除(remove)
+- (CRUD)
+  - 保存(save)
+  - 作成(make)
+  - 削除(remove)
 
 - 複製 clone
 
@@ -20,3 +20,10 @@
   - 添付 link
   - 戻る(return)
   - やり直す(over)
+
+  ```bash
+    docker-compose -v
+    docker-compose build
+    docker-compose up -d
+    docker exec -it tutorial /bin/sh
+  ```
