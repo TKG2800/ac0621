@@ -8,7 +8,7 @@ let memolist: memo[];
 const creatememo = () => {
   let textArea = document.getElementById("memo") as HTMLInputElement | null;
   let text: string = ""; 
-  if (textArea == HTMLInputElement) {
+  if (textArea instanceof HTMLInputElement) {
     text = textArea.value;
   } else if (textArea == null) {}
     let memo: memo = {
@@ -24,5 +24,6 @@ const updatememo = () => {
 
 }
 const savememo = () => {
-
+  memolist.push (creatememo());
 }
+
