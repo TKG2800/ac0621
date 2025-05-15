@@ -1,8 +1,24 @@
 type memo = {
-  id: number;
-  context: string;
+    id: number;
+    context: string;
 }
 
-const createMemo = (context: string) => {
-  const  textArea = document.body.getElementsById('mome') as HTMLInputElement;
+let nextid: number;
+const creatememo = () => {
+  let textArea = document.getElementById("memo") as HTMLInputElement | null;
+  let text: string; 
+  if (textArea == HTMLInputElement) {
+    text = textArea?.value;
+  } else if (textArea == null) {}
+    let memo: memo = {
+        id: number = nextid++,
+        context: string = text; 
+    }
+  return memo;
+}  
+const removememo = () => {
+
+}
+const updatememo = () => {
+
 }
