@@ -20,3 +20,8 @@
   - 添付 link
   - 戻る(return)
   - やり直す(over)
+
+  '''bash
+  docker-compose -v
+
+  ```
