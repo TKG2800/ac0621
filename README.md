@@ -27,3 +27,14 @@
     docker-compose up -d
     docker exec -it tutorial /bin/sh
   ```
+
+linuxコマンド
+  ```bash
+  pwd # 現在地
+  cd フォルダー名 # フォルダー移動
+  mkdir # フォルダーを作成する
+  ls # 今いる場所のあるもの オプション -a # 隠し要素を表示する -l # 詳細なリストを表示する
+  cat フォイル名 # 中身を表示する
+  mv # 移動/名前を変更する
+  cp # コピー
+  ```
